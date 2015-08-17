@@ -1,7 +1,6 @@
 os: osx
-before_install:
-  - brew update
-  - brew outdated xctool || brew upgrade xctool
-script:
 
-- c++ --version
+osx_image: xcode6.4
+
+script:
+  - c++ --version
