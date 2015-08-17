@@ -1,0 +1,4 @@
+os: osx
+script:
+
+- c++ --version
