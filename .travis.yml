@@ -1,6 +1,9 @@
-os: osx
-
-osx_image: xcode6.4
+matrix: 
+  include: 
+    - os: linux 
+        dist: trusty 
+        sudo: required 
+    - os: osx
 
 script:
   - c++ --version
