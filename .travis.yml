@@ -1,7 +1,15 @@
 language: objective-c
 
 os: osx
+
 osx_image: xcode7
 
+rvm: 2.0.0-p481
+
+before_install:
+  - bundle update
+  - gem install cocoapods --user-install
+  - gem which cocoapods
+
 script:
-  - c++ --version
+  - echo hola
