@@ -8,7 +8,6 @@ rvm: 2.0.0-p481
 
 before_install:
   - gem install cocoapods 
-  - gem which cocoapods
 
 script:
   - ruby --version
