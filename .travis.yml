@@ -1,7 +1,7 @@
 language: objective-c
 
 os: osx
-osx_image: xcode63
+osx_image: beta-xcode6.3
 
 script:
   - c++ --version
