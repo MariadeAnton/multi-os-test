@@ -1,13 +1,22 @@
-language: objective-c
+language: c
 
-os: osx
-osx_image: xcode7
+os:
+  - linux
+  - osx
 
-before_install:
-  - gem uninstall cocoapods 
-  - gem install cocoapods -v 0.38.2
+compiler:
+  - gcc
+  - clang
+
+addons:
+  apt:
+    packages:
+      - graphviz
+
+before install:
+  - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then brew update          ; fi
+  - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then brew install graphviz; fi
 
 script:
-  - ruby --version
-  - echo hola
-  - pod --version
+  - cd src
+  - make all
