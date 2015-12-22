@@ -1,27 +1,24 @@
-
+language: generic
 matrix:
   include:
     - os: linux
       dist: trusty
       sudo: required
-      language: generic
       install: true
       script: echo hola
     - os: linux
       sudo: false
-      language: generic
-           addons:
-             apt:
-               packages:
-                 - vim
-                 - automake
-                 - pkg-config
-                 - libpcre3-dev
-                 - zlib1g-dev
+      addons:
+        apt:
+          packages:
+            - vim
+            - automake
+            - pkg-config
+            - libpcre3-dev
+            - zlib1g-dev
       install: true
       script: echo hola
     - os: linux
       sudo: required
-      language: generic
       install: true
       script: echo hola
