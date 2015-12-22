@@ -6,7 +6,21 @@ matrix:
       sudo: required
       install: true
       script: echo hola
-    - os: linux
+    - env: AG_VER=master
+      os: linux
+      sudo: false
+      addons:
+        apt:
+          packages:
+            - vim
+            - automake
+            - pkg-config
+            - libpcre3-dev
+            - zlib1g-dev
+      install: true
+      script: echo hola
+    - env: AG_VER=0.31.0
+      os: linux
       sudo: false
       addons:
         apt:
