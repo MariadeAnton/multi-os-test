@@ -1,13 +1,15 @@
-language: generic
+
 matrix:
   include:
     - os: linux
       dist: trusty
       sudo: required
+      language: generic
       install: true
       script: echo hola
     - os: linux
       sudo: false
+      language: generic
            addons:
              apt:
                packages:
@@ -20,5 +22,6 @@ matrix:
       script: echo hola
     - os: linux
       sudo: required
+      language: generic
       install: true
       script: echo hola
