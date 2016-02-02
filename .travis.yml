@@ -3,5 +3,5 @@ os: osx
 osx_image: xcode7.1
 script:
   - brew cask install dockertoolbox
-  - bash --login '/Applications/Docker/Docker Quickstart Terminal.app/Contents/Resources/Scripts/start.sh'
+  - docker-machine -D create -d virtualbox dev
 
