@@ -3,5 +3,6 @@ os: osx
 osx_image: xcode7.1
 script:
   - brew cask install dockertoolbox
-  - docker-machine -D create -d virtualbox dev
+  - docker-machine -D create -d virtualbox dev --virtualbox-memory "5120"
+  - eval $(docker-machine env dev)
 
