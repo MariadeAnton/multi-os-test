@@ -1,8 +1,3 @@
 language: objective-c
-os: osx
 osx_image: xcode7.2
-script:
-  - brew cask install dockertoolbox
-  - docker-machine -D create -d virtualbox dev --virtualbox-memory "5120"
-  - eval $(docker-machine env dev)
-
+script: echo hola
