@@ -2,9 +2,7 @@ language: objective-c
 osx_image: xcode6.4
 
 before_install:
-  - brew update
-  - brew update
-  - brew doctor
+  - brew update; brew update
   - brew install awscli
 
 script: echo sayHi
