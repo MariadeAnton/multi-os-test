@@ -7,6 +7,7 @@ matrix:
   include:
     - os: linux
       sudo: required
+      dist: precise
       addons:
         apt:
           packages:
