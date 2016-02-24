@@ -14,7 +14,7 @@ before_install:
 
 install:
 - bundler -v
-- pod -v
+- pod --version
 
 before_script:
 - export LANG=en_US.UTF-8
