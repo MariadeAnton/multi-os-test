@@ -6,3 +6,6 @@ before_install:
   - pod --version
   - sudo gem install cocoapods --pre
   - pod --version
+
+script:
+  - echo hola
