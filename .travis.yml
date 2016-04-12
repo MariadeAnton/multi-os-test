@@ -4,6 +4,7 @@ xcode_sdk: iphonesimulator9.2
 
 before_install:
   - pod --version
+  - sudo gem uninstall cocoapods -x --force
   - sudo gem install cocoapods --pre
   - pod --version
 
