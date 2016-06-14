@@ -1,5 +1,5 @@
 os: osx
-osx_image: beta-xcode6.2
+osx_image: osx_image: xcode8
 language: objective-c
 
 install: true
