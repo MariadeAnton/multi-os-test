@@ -6,3 +6,4 @@ install: true
 script:
   - echo hola
   - java -version
+  - oraclejdk
