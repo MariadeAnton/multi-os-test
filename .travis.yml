@@ -1,8 +1,10 @@
+osx_image: xcode7.3
 language: objective-c
+xcode_project: ios/Link.xcodeproj/
+xcode_scheme: TOL
+before_script:
+  - echo hi
+script: xctool -project ios/Link.xcodeproj/ -scheme 'TOL' -configuration Debug -sdk iphoneos9.3 build
 
-osx_image: beta-xcode6.2
-
-install: true
-script:
+after_script:
   - echo hola
-  - java -version
