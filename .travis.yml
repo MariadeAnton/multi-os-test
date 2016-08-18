@@ -1,8 +1,23 @@
-language: objective-c
-
-osx_image: beta-xcode6.2
-
-install: true
-script:
-  - echo hola
-  - java -version
+matrix:
+  include:
+    - os: linux
+      sudo: false
+      install: true
+      script: echo hi
+    - os: linux
+      sudo: false
+      addons:
+        apt:
+          sources:
+          - ubuntu-toolchain-r-test
+          packages:
+          - python3
+          - ocaml-native-compilers
+          - gcc-5
+          - g++-5
+      install: true
+      script: echo hi
+    - os: osx
+      sudo: required
+      install: true
+      script: echo hi
